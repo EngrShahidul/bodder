@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(70, 1, 80);
+
+}
+.titl{
+    color: rgb(63, 4, 69);
+    text-align: center;
+    position: relative;
+    
+    
+}
+.pp{
+    background-color: rgba(3, 90, 101);
+    padding: 12px;
+}
+.uniq{
+    border: 2px solid rgb(67, 45, 16);
+    height: 500px;
+    position: relative;
+}
+.titl::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 85%;
+    top: 15px;
+    right: 7%;
+    background-color: transparent;
+    border: 3px solid rgb(3, 90, 101);
+    border-bottom: 0px;
+    z-index: -1;
+}
+.uniq::after{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 85%;
+    bottom: 15px;
+    right: 7%;
+    background-color: transparent;
+    border: 3px solid rgb(3, 90, 101);
+    z-index: -1;
+    border-top: 0px;
+}
